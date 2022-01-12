@@ -1,3 +1,2 @@
-Erick Gulyan
-Ostrich
-Hello World
+#Erick Gulyan
+**Favorite Animal** - Ostrich
