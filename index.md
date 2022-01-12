@@ -1,5 +1,6 @@
 # Erick Gulyan
-**Favorite Animal** - ## Ostrich
+**Favorite Animal** 
+## Ostrich
 
 
 
