@@ -1,10 +1,13 @@
-# Erick Gulyan
-**Favorite Animal** 
-## Ostrich
+## Erick Gulyan
+**CSE 15L Week 2 Lab Report** 
 
+Hello and Welcome to my Week 2 Lab Report where I will teach you how to setup your programming environment and login into your .ieng6 account.
+---
+First, we need to download VS Code from your browser. Feel free to use this link to access the website for a quick download.
+https://code.visualstudio.com/download
+---
+<img width="1263" alt="VSCODE_DOWNLOAD" src="https://user-images.githubusercontent.com/97641133/149434608-bd84a675-5263-48d5-a51b-f277ec235ac5.png">
 
-
-![Image](https://github.com/erick-gulyan/cse15l-lab-report/files/7858683/635577047626238302-phxdc5-6936v4t3ndh1j0kyujd9-original.jpg.pdf)
 
 
 Horizontal rule:
