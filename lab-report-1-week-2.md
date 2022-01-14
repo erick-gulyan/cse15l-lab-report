@@ -2,7 +2,9 @@
 **CSE 15L Week 2 Lab Report** 
 ---
 Hello and Welcome to my Week 2 Lab Report where I will teach you how to setup your programming environment and login into your .ieng6 account.
-**---**
+
+---
+
 ## Step 1) Installing VScode
 First, we need to download VS Code from your browser. Feel free to use this link to access the website for a quick download.
 https://code.visualstudio.com/download
@@ -13,7 +15,7 @@ After succesfully downloading VS Code, you should be able to open the applicatio
 
 <img width="776" alt="VSCODE_SETUP" src="https://user-images.githubusercontent.com/97641133/149435113-fa3ad285-8162-4e1a-af63-58c5aeff7b40.png">
 
-**---**
+---
 
 ## Step 2) Remotely Connecting
 First, if you have a Windows computer you need to install OpenSSH at this link below:
@@ -40,7 +42,7 @@ Once the password is entered, your screen should look like this (Keep in mind, p
 
 <img width="771" alt="Screen Shot 2022-01-05 at 3 34 42 PM" src="https://user-images.githubusercontent.com/97641133/149435654-f13589f4-fbb5-45be-bc34-a5c12fac5870.png">
 
-**---**
+---
 
 ## Part 3) Run Some Commands
 
@@ -65,7 +67,7 @@ Now, to log out of the remote server, you can do it two ways.
 2. Run the `exit` command in terminal
 
 
-**---**
+---
 
 ## Part 4) Moving Files with scp
 
@@ -101,7 +103,7 @@ The picture below shows running the command on both client and server side by si
 
 You have now copied a file into your remote server and run code from that server. Well done!
 
-**---**
+---
 
 ## Part 5) SSH Keys
 
@@ -139,7 +141,15 @@ The login shouldn't require a password, and should instantly log you into your r
 
 After this, your SSH key on your device is setup. (Note, this is specific to your device).
 
-**---**
+---
+
+## Part 6) Optimizing Remote Running
+
+Now, with our remote server setup and you having learned some commands, lets try to make some edits to `WhereAmI.java`.
+
+Some useful tips is that you can seperate multiple different commands all in the same command line using semicolons `;`.
+
+Also, you can use the up and down arrows on your keyboard to quickly pull up the last commands and cycle through them.
 
 
 `Inline code` with backticks
