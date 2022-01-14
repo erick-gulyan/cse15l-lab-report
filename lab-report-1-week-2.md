@@ -92,9 +92,14 @@ With "zz" again replaced by your course specific account. You will then be promp
 
 Afterwards, you can use `ls` in the terminal to see the file in your home directory on the remote server.
 
+Now, run the `javac` and `java` command in the console for the file WhereAmI.java which is in the remote server.
 
+Shocking? You should see a different output than when you ran it on your client. This is because it's now running on the server!
+The picture below shows running the command on both client and server side by side. (Server run on right side).
 
 <img width="468" alt="Screen Shot 2022-01-13 at 6 04 06 PM" src="https://user-images.githubusercontent.com/97641133/149438839-be1ec8b6-2c14-43f2-bed0-ae115384ab90.png">
+
+You have now copied a file into your remote server and run code from that server. Well done!
 
 
 
