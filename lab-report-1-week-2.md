@@ -69,9 +69,32 @@ Now, to log out of the remote server, you can do it two ways.
 
 Part 4) Moving Files with scp
 
+In this step, were going to be moving files over from your client to your serber using the scp command.
+
+`scp` means secure copy, and it will copy files from one specified place to another.
+
+First, you're going to need to create a new java file called `WhereAmI.java` and fill it with the contents below.
+`class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}`
+
+After you have copied this and saved the file, run it using `javac WhereAmI.java` and `java WhereAmI`.
+Note the output of the program, and remember it for a later step.
+
+Then, you should use the command 
+`scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/`
+With "zz" again replaced by your course specific account. You will then be prompted for your password.
+
+Afterwards, you can use `ls` in the terminal to see the file in your home directory on the remote server.
 
 
 
+<img width="468" alt="Screen Shot 2022-01-13 at 6 04 06 PM" src="https://user-images.githubusercontent.com/97641133/149438839-be1ec8b6-2c14-43f2-bed0-ae115384ab90.png">
 
 
 
