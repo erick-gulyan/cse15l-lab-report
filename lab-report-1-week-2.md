@@ -30,6 +30,12 @@ In the Terminal you need to type "ssh" followed by your course specific account 
 
 Next, the terminal should prompt you for a password, so enter your password for the course specific account.
 
+You may be prompted by a message which says `The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? `
+
+Type yes as a response.
+
 Once the password is entered, your screen should look like this (Keep in mind, password will not display as you are typing).
 
 <img width="771" alt="Screen Shot 2022-01-05 at 3 34 42 PM" src="https://user-images.githubusercontent.com/97641133/149435654-f13589f4-fbb5-45be-bc34-a5c12fac5870.png">
