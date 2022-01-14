@@ -158,6 +158,5 @@ Now that we are able to quickly login and perform commands, time yourself to see
 
 And we are all done!
 
-`Inline code` with backticks
 
 [Lab Report 1](https://erick-gulyan.github.io/cse15l-lab-report/lab-report-1-week-2.html)
