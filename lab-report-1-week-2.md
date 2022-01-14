@@ -150,7 +150,13 @@ Now, with our remote server setup and you having learned some commands, lets try
 Some useful tips is that you can seperate multiple different commands all in the same command line using semicolons `;`.
 
 Also, you can use the up and down arrows on your keyboard to quickly pull up the last commands and cycle through them.
+Similar to the photo below, we can log into our server and add commands as we are doing it such as `ls`.
 
+<img width="547" alt="Screen Shot 2022-01-13 at 7 21 41 PM" src="https://user-images.githubusercontent.com/97641133/149446104-8a4b4d00-82f2-421a-aa52-554e1f7884d9.png">
+
+Now that we are able to quickly login and perform commands, time yourself to see how long it takes to login and run the `java` file in the terminal on your server.
+
+And we are all done!
 
 `Inline code` with backticks
 
