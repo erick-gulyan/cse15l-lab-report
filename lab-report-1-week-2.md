@@ -2,7 +2,7 @@
 **CSE 15L Week 2 Lab Report** 
 ---
 Hello and Welcome to my Week 2 Lab Report where I will teach you how to setup your programming environment and login into your .ieng6 account.
----
+**---**
 ## Step 1) Installing VScode
 First, we need to download VS Code from your browser. Feel free to use this link to access the website for a quick download.
 https://code.visualstudio.com/download
@@ -13,7 +13,7 @@ After succesfully downloading VS Code, you should be able to open the applicatio
 
 <img width="776" alt="VSCODE_SETUP" src="https://user-images.githubusercontent.com/97641133/149435113-fa3ad285-8162-4e1a-af63-58c5aeff7b40.png">
 
----
+**---**
 
 ## Step 2) Remotely Connecting
 First, if you have a Windows computer you need to install OpenSSH at this link below:
@@ -39,6 +39,40 @@ Type yes as a response.
 Once the password is entered, your screen should look like this (Keep in mind, password will not display as you are typing).
 
 <img width="771" alt="Screen Shot 2022-01-05 at 3 34 42 PM" src="https://user-images.githubusercontent.com/97641133/149435654-f13589f4-fbb5-45be-bc34-a5c12fac5870.png">
+
+**---**
+
+Part 3) Run Some Commands
+
+Now that we are logged into your @ieng6 account, we can try some terminal commands and learn more about the setup.
+
+Some commands you can write are:
+1. `cd ~`
+2. `cd`
+3. `ls -lat`
+4. `ls -a`
+5. `ls <directory> where  the <directory> is /home/linux/ieng6/cs15lwi22/cs15lwi22zzz` and the zzz at the end is your course account characters.
+6. `ls`
+7. `pwd`
+
+Once you have tested some of these commands, note the output and try to figure out what they are doing!
+Here are a few example commands and their outputs.
+
+<img width="318" alt="Screen Shot 2022-01-05 at 3 47 58 PM" src="https://user-images.githubusercontent.com/97641133/149437516-8437d895-8d85-4eab-a454-852805643c2b.png">
+
+Now, to log out of the remote server, you can do it two ways.
+1. Use Control-D
+2. Run the `exit` command in terminal
+
+
+**---**
+
+Part 4) Moving Files with scp
+
+
+
+
+
 
 
 
