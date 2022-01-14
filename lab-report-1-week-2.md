@@ -42,7 +42,7 @@ Once the password is entered, your screen should look like this (Keep in mind, p
 
 **---**
 
-Part 3) Run Some Commands
+## Part 3) Run Some Commands
 
 Now that we are logged into your @ieng6 account, we can try some terminal commands and learn more about the setup.
 
@@ -67,7 +67,7 @@ Now, to log out of the remote server, you can do it two ways.
 
 **---**
 
-Part 4) Moving Files with scp
+## Part 4) Moving Files with scp
 
 In this step, were going to be moving files over from your client to your serber using the scp command.
 
@@ -101,7 +101,45 @@ The picture below shows running the command on both client and server side by si
 
 You have now copied a file into your remote server and run code from that server. Well done!
 
+**---**
 
+## Part 5) SSH Keys
+
+Now you should notice that it takes quite a bit of time to log into your remote server. Let's show you a way to speed it up a bit with SSH keys!
+
+First, you would need to `exit` from the remote server. Next, you need to use the command:
+`ssh-keygen` to generate a SSH key we will use for a speedy login. 
+
+The terminal should output `Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/"youruser"/.ssh/id_rsa)`
+You should input the same thing as what is inside the parenthensis ("youruser" replaced with the name of your user on your computer, not client).
+ 
+Then it will ask you to enter a passphrase, which you could leave empty and hit Enter.
+ 
+Afterwards, you should receive a confirmation message saying the identification has been saved in `Your Directory Input`.
+
+Next, you should try logging into your remote server using the `ssh` command you have done already. (along with the password)
+
+If you're on Windows, you will need to follow the extra `ssh-add` steps in https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation
+
+Now in order to finish the setup of the SHH key, you will need to enter the command `mkdir .ssh` to make a new directory.
+
+Next, we will need to `exit` the remote server and complete the remaining steps on the client.
+
+On the client, you will need to copy the command:
+`scp /Users/username/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+You will need to replace the username with your computer user account name and the "zz" with the course specific account.
+
+Once finished, you can log into your remote server using the `ssh` command. 
+
+The login shouldn't require a password, and should instantly log you into your remote server as shown below.
+
+<img width="664" alt="Screen Shot 2022-01-13 at 6 59 10 PM" src="https://user-images.githubusercontent.com/97641133/149444083-a7c9aa05-1956-42a4-a145-a9814147793e.png">
+
+After this, your SSH key on your device is setup. (Note, this is specific to your device).
+
+**---**
 
 
 `Inline code` with backticks
