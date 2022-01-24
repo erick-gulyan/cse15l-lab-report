@@ -152,7 +152,11 @@ Some useful tips is that you can seperate multiple different commands all in the
 Also, you can use the up and down arrows on your keyboard to quickly pull up the last commands and cycle through them.
 Similar to the photo below, we can log into our server and add commands as we are doing it such as `ls`.
 
-<img width="547" alt="Screen Shot 2022-01-13 at 7 21 41 PM" src="https://user-images.githubusercontent.com/97641133/149446104-8a4b4d00-82f2-421a-aa52-554e1f7884d9.png">
+In the example below, I used `scp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI` to log into my secure remote server, copy the file to the remote server, and run it through `javac` and `java` commands. In total, this process took 4 keystrokes: 2 clicks to open the terminal and one up arrow and one enter key stroke. Included below this is also another command which involved 3 key strokes, used to check the listed files in our secure remote server.
+
+
+<img width="831" alt="Screen Shot 2022-01-24 at 1 12 08 PM" src="https://user-images.githubusercontent.com/97641133/150865678-90367362-234b-4d41-8514-23e3595c6ec7.png">
+
 
 Now that we are able to quickly login and perform commands, time yourself to see how long it takes to login and run the `java` file in the terminal on your server.
 
