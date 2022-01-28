@@ -3,7 +3,12 @@
 ---
 Hello and Welcome to my Week 4 Lab Report where I will show you three different commits our lab group did to improve the MarkdownParse file.
 
-1) 
+
+1)
+The file used was [this file](https://github.com/erick-gulyan/markdown-parse/blob/main/test1-withspace.md)
+
+<img width="1017" alt="withspace" src="https://user-images.githubusercontent.com/97641133/151507687-e5e72ff7-654d-450b-8499-b88466799774.png">
+
 
 
 
