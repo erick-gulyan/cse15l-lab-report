@@ -10,6 +10,7 @@ The file used was [this file](https://github.com/erick-gulyan/markdown-parse/blo
 <img width="1017" alt="withspace" src="https://user-images.githubusercontent.com/97641133/151507687-e5e72ff7-654d-450b-8499-b88466799774.png">
 
 
+<img width="590" alt="withspacebreak" src="https://user-images.githubusercontent.com/97641133/151508188-02dc2b4b-1623-4f7c-ae06-dce201b8c05c.png">
 
 
 2) We noticed that when the file we were working with had brackets or parenthensis which remained open and never closed, the code showed an infinite loop error and ran out of space on the heap. This error can be shown in the image below.
