@@ -12,6 +12,8 @@ The file used was [this file](https://github.com/erick-gulyan/markdown-parse/blo
 To resolve this, we added code to check for the values of `nextOpenBracket`, `nextCloseBracket`, `openParen`, `closeParen`, to be -1. If so, then the code would break and thus, avoiding an infinite loop.
 <img width="1401" alt="loops" src="https://user-images.githubusercontent.com/97641133/151503635-e0f3fb07-b165-45f4-9b5f-718ab240eca2.png">
 
+The bug in the code is in the getLinks method where if the values of `nextOpenBracket`, `nextCloseBracket`, `openParen`, `closeParen` are not necessarily declared due to lack of them, the code will keep looping until it's found, which doesn't need to happen. The symptom of this is the terminal showing that the code runs infinitely until the heap has filled up and breaks. The failure inducing input in my file was the lack of `)` in the file to end the search.
+
 
 
 
