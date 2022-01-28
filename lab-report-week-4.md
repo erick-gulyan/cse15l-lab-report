@@ -3,7 +3,7 @@
 ---
 Hello and Welcome to my Week 4 Lab Report where I will show you three different commits our lab group did to improve the MarkdownParse file.
 
-
+---
 1) For this issue, we examined a file with a space and saw the outcome of testing out program against this possibility.
 
 
@@ -20,7 +20,7 @@ The photo below shows the changes made to the code to resolve this issue.
 
 The bug in this code is the getLinks method where we do `toReturn.add(markdown.substring(openParen+1,closeParen));` since this assumes the link is the string between the open and closed parenthensis. The symptom of this is that the program looks for the incorrect substring , which causes an error during runtime. This error inducing input was a file with a space inside of it in the space of the link
 
-
+---
 2) We noticed that when the file we were working with had brackets or parenthensis which remained open and never closed, the code showed an infinite loop error and ran out of space on the heap. This error can be shown in the image below.
 
 The file used was [this file](https://github.com/erick-gulyan/markdown-parse/blob/main/test2-infiniteloop.md?plain=1).
