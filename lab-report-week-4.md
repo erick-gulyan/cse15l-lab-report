@@ -3,7 +3,11 @@
 ---
 Hello and Welcome to my Week 4 Lab Report where I will show you three different commits our lab group did to improve the MarkdownParse file.
 
-1) We noticed that when the file we were working with had brackets or parenthensis which remained open and never closed, the code showed an infinite loop error and ran out of space on the heap. This error can be shown in the image below.
+1) 
+
+
+
+2) We noticed that when the file we were working with had brackets or parenthensis which remained open and never closed, the code showed an infinite loop error and ran out of space on the heap. This error can be shown in the image below.
 
 The file used was [this file](https://github.com/erick-gulyan/markdown-parse/blob/main/test2-infiniteloop.md?plain=1).
 
