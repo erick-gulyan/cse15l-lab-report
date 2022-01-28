@@ -14,3 +14,5 @@ Horizontal rule:
 `Inline code` with backticks
 
 [Lab Report 1](https://erick-gulyan.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+
+[Lab Report 2](https://github.com/erick-gulyan/cse15l-lab-reports/blob/main/lab-report-1-week-4.md)
