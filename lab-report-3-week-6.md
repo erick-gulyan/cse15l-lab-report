@@ -1,4 +1,5 @@
 ## Lab Report 3
+## Erick Gulyan
 In this lab report, I will show how to copy a whole directory into our ieng6 server, run the code, and also show some streamlined methods to copying directories.
 
 First, we need to use the `scp` command as we have done in previous labs to copy files, but instead of a file, this time lets copy our entire `markdown-parse` Github directory!
