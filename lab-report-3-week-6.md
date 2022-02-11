@@ -22,5 +22,12 @@ Running this command, we now have:
 <img width="581" alt="Screen Shot 2022-02-10 at 8 29 55 PM" src="https://user-images.githubusercontent.com/97641133/153537736-7b8cea81-0796-4dee-abcf-2fcb8ab91225.png">
 
 After running this command, the terminal shows a long list of files which are copied, the copy speed of each file, a timestamp of when the files were copied relative to eachother, and a completion percentage (which changed as they are copied in).
+--
+Now, after running that command, the entire markdown-parse directory should have been copied succesfully to our remote server. To check, we `ssh` into our remote server and ran `ls`, which shows all the directories/files.
+<img width="574" alt="Screen Shot 2022-02-10 at 8 32 07 PM" src="https://user-images.githubusercontent.com/97641133/153537891-6a668688-ae71-4e2a-bcd6-2b4648ca260b.png">
+
+Also running `ls -l` shows more information about the files/directories, including when each was copied in. This photo below shows it was copied in on Feb 10 at 8:29, which is when I copied this directory in.
+
+<img width="574" alt="Screen Shot 2022-02-10 at 8 33 18 PM" src="https://user-images.githubusercontent.com/97641133/153537957-2daf1626-3a1a-4ca7-acc9-a204a9a41eed.png">
 
 
