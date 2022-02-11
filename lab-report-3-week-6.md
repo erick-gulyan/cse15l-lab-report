@@ -6,6 +6,7 @@ First, we need to use the `scp` command as we have done in previous labs to copy
 In this case, `scp` works recursively to first copy the directory, then to copy all of the files inside of it one by one until all the files have been copied. (Note, the user only runs one command, the recursive calls happen in the background!).
 
 --
+
 First, we run `pwd` to print the working directory and show we are in the local directory. Then we ran `ls` to show all of the files in our current directory.
 
 <img width="587" alt="Screen Shot 2022-02-10 at 8 25 24 PM" src="https://user-images.githubusercontent.com/97641133/153537453-52fc0775-9eab-4b1b-8116-11f5e731ea8c.png">
@@ -28,6 +29,26 @@ Now, after running that command, the entire markdown-parse directory should have
 
 Also running `ls -l` shows more information about the files/directories, including when each was copied in. This photo below shows it was copied in on Feb 10 at 8:29, which is when I copied this directory in.
 
+
+
+Now, to speedrun this process, I combined multiple commands to:
+1. Copy the directory
+2. SSH into my remote server
+3. Compile MarkDownParseTest.java
+4. Run MarkDownParseTest JUnit tests.
+
+The command I used was `scp -r . cs15lwi22age@ieng6.ucsd.edu:~/markdown-parse; ssh cs15lwi22age@ieng6.ucsd.edu javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java ;java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest`
+
+Here is the result:
+At first, I removed markdown-parse so then I can recopy it. Then ran the command:
 <img width="574" alt="Screen Shot 2022-02-10 at 8 33 18 PM" src="https://user-images.githubusercontent.com/97641133/153537957-2daf1626-3a1a-4ca7-acc9-a204a9a41eed.png">
 
+Now that all the files were copied in. The next command runs, which is the `ssh` command:
+
+<img width="954" alt="Screen Shot 2022-02-10 at 9 02 10 PM" src="https://user-images.githubusercontent.com/97641133/153540110-1e32fec1-6d3a-44df-ba92-17fbf9e4691c.png">
+
+Then: The JUnit tests run and show us the expected passing case.
+<img width="332" alt="Screen Shot 2022-02-10 at 9 04 12 PM" src="https://user-images.githubusercontent.com/97641133/153540239-f7c1e352-fce5-44ae-a532-81349c8f6815.png">
+
+Now that we ran a command doing all of these, we are done!
 
