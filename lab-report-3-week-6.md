@@ -48,6 +48,7 @@ Now that all the files were copied in. The next command runs, which is the `ssh`
 <img width="954" alt="Screen Shot 2022-02-10 at 9 02 10 PM" src="https://user-images.githubusercontent.com/97641133/153540110-1e32fec1-6d3a-44df-ba92-17fbf9e4691c.png">
 
 Then: The JUnit tests run and show us the expected passing case.
+'
 <img width="332" alt="Screen Shot 2022-02-10 at 9 04 12 PM" src="https://user-images.githubusercontent.com/97641133/153540239-f7c1e352-fce5-44ae-a532-81349c8f6815.png">
 
 Now that we ran a command doing all of these, we are done!
