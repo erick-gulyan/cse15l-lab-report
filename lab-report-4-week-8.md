@@ -26,7 +26,7 @@ Also showing running the tests on their MD parse.
 
 ## Fixing Changes to Lab Group Member's MD Parse
 
-# Code Snippet 2:
+### Code Snippet 2:
 The test failed and showed the output:
 `java.lang.AssertionError: expected:<[]> but was:<[a.com, a.com(()), example.com]>
         at org.junit.Assert.fail(Assert.java:89)
@@ -38,7 +38,7 @@ The test failed and showed the output:
  This output tells us that markdownparse isnt updating the locations of the parenthensis correctly, thus adding extra items to the list.
  One short way to fix this could be to update the value of the lastClosedParenthensis at the beginning of the method to accurately find the last closed parenthensis and thus would avoid any issues such as the one above.
  
-# Code Snippet 3:
+### Code Snippet 3:
 The test failed and showed the output:
 `java.lang.StringIndexOutOfBoundsException: String index out of range: 465
         at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
