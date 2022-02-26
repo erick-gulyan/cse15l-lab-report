@@ -14,7 +14,7 @@ I have also included a photo showing these changes committed to my `markdown-par
 <img width="964" alt="commit" src="https://user-images.githubusercontent.com/97641133/155817394-82f7cd9e-ce32-44eb-849a-3ead8d0d123e.png">
 
 ## Lab group member's MarkdownParse
-[Link to repository] (https://github.com/Rikochu/markdown-parse)
+[Link to repository](https://github.com/Rikochu/markdown-parse)
 
 When running the tests on Rishi's `markdown-parse`, I found that test2 and test3 failed, while test1 passed, as shown below:
 
