@@ -13,41 +13,65 @@ I have also included a photo showing these changes committed to my `markdown-par
 
 <img width="964" alt="commit" src="https://user-images.githubusercontent.com/97641133/155817394-82f7cd9e-ce32-44eb-849a-3ead8d0d123e.png">
 
-## Lab group member's MarkdownParse
-[Link to repository](https://github.com/Rikochu/markdown-parse)
+## Kathy's MarkdownParse
+[Link to repository](https://github.com/kathyychenn/markdown-parse)
 
-When running the tests on Rishi's `markdown-parse`, I found that test2 and test3 failed, while test1 passed, as shown below:
+When running the tests on Kathy's `markdown-parse`, I found that ALL Three Tests failed,  as shown below:
 
-<img width="839" alt="testsrunonotherperson" src="https://user-images.githubusercontent.com/97641133/155817736-758cc4ee-a811-47cf-b179-d1294f7b1eb6.png">
-
-Also showing running the tests on their MD parse.
-<img width="1350" alt="someone elses md parse" src="https://user-images.githubusercontent.com/97641133/155817788-62b87220-0900-4ec0-a426-fd1e0790b52d.png">
+<img width="865" alt="kathy_tests_MDPARSE" src="https://user-images.githubusercontent.com/97641133/157586863-e75d53d5-e5d7-4d78-a720-9d317068894f.png">
 
 
-## Fixing Changes to Lab Group Member's MD Parse
 
-### Code Snippet 2:
-The test failed and showed the output:
-`java.lang.AssertionError: expected:<[]> but was:<[a.com, a.com(()), example.com]>
+
+## Fixing Changes to Kathy's MD Parse
+
+### Code Snippet 1:
+The test failed and showed the output: 
+
+``java.lang.AssertionError: expected:<[google.com, google.com, ucsd.edu]> but was:<[url.com, `google.com, google.com]>
         at org.junit.Assert.fail(Assert.java:89)
         at org.junit.Assert.failNotEquals(Assert.java:835)
         at org.junit.Assert.assertEquals(Assert.java:120)
         at org.junit.Assert.assertEquals(Assert.java:146)
-        at MarkdownParseTest.snippet2Test(MarkdownParseTest.java:49)`
+        at MarkdownParseTest.snippet1Test(MarkdownParseTest.java:68)``
         
- This output tells us that markdownparse isnt updating the locations of the parenthensis correctly, thus adding extra items to the list.
- One short way to fix this could be to update the value of the lastClosedParenthensis at the beginning of the method to accurately find the last closed parenthensis and thus would avoid any issues such as the one above.
+There is a short fix to the markdown parse java file which could fix this issue. I believe if we add variables to keep track of the backtick character similar to parenthensis and brackets. With this, we can check to see if the backticks are located outside of the brackets to declare a link, or inside. This would fix the issue of the included backticks in the link. 
+        
  
+ 
+### Code Snippet 2:
+The test failed and showed the output:
+
+`java.lang.AssertionError: expected:<[a.com, a.com(()), example.com]> but was:<[a.com((]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at MarkdownParseTest.snippet2Test(MarkdownParseTest.java:76)`
+
+This output tells us that markdownparse isnt updating the locations of the parenthensis correctly, thus adding extra items to the list.
+ One short way to fix this could be to update the value of the lastClosedParenthensis at the beginning of the method to accurately find the last closed parenthensis and thus would avoid any issues such as the one above.
+
 ### Code Snippet 3:
 The test failed and showed the output:
-`java.lang.StringIndexOutOfBoundsException: String index out of range: 465
-        at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
-        at java.base/java.lang.String.charAt(String.java:1512)
-        at MarkdownParse.findCloseParen(MarkdownParse.java:14)
-        at MarkdownParse.getLinks(MarkdownParse.java:36)
-        at MarkdownParseTest.snippet3Test(MarkdownParseTest.java:56)`
+                `java.lang.AssertionError: expected:<[https://ucsd-cse15l-w22.github.io/]> but was:<[
+                 https://ucsd-cse15l-w22.github.io/
+                , github.com`
+
+                And there's still some more text after that.
+
+                [this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
+
+
+
+                ]>
+                        at org.junit.Assert.fail(Assert.java:89)
+                        at org.junit.Assert.failNotEquals(Assert.java:835)
+                        at org.junit.Assert.assertEquals(Assert.java:120)
+                        at org.junit.Assert.assertEquals(Assert.java:146)
+                        at MarkdownParseTest.snippet3Test(MarkdownParseTest.java:84)
         
- This output tells us that markdownparse isn't working correctly when dealing with the use of a `\n` character, thus giving us a String index out of bounds exception. To fix this in one line, it would be best to add an if statement to check if the `\n` character was used after: `(,),[,]` and update the indices appropriately. 
+ This output tells us that markdownparse isn't working correctly when dealing with the use of a `\n` character, by including them in the links area instead of ignoring the white space and `\n` characters. To fix this in one line, it would be best to add an if statement to check if the `\n` character was used after: `(,),[,]` and update the indices appropriately. 
 
 
 
