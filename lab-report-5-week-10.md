@@ -22,11 +22,11 @@ After running the diff command, the differences between my file and the professo
 <img width="107" alt="Screen Shot 2022-03-11 at 2 12 23 PM" src="https://user-images.githubusercontent.com/97641133/157978910-04f2eca5-5521-4536-a057-56e76ffc8303.png">
 
 Prof's Output: `[]`
---
+---
 My Output: `train.jpg`
---
+---
 Expected Output: `[]`
---
+---
 
 I believe that my output is incorrect since the file doesn't follow the proper format for it to be considered a link, the format being:
 `[Link](a.com)`
@@ -42,11 +42,11 @@ The results of the diff command shown below:
 <img width="142" alt="Screen Shot 2022-03-11 at 2 35 13 PM" src="https://user-images.githubusercontent.com/97641133/157983741-a26a5b13-946f-4e80-8946-c7fa230131e6.png">
 
 My Output: `[]`
---
+---
 Prof's Output: `[<url>]`
---
+---
 Expected Output: `[<url>]`
---
+---
 
 I believe that my output is incorrect for this case since the file follows proper order to product a link, that being `[Link](anything)`.
 This given test link is special since it incorporates the use of paths and adds a "title" text inside of the link after the path argument followed preceeded by spaces. This issue could be fixed by adding an if statement which checks to see if the character after the `LastOpenParen` is `/`, if so, then the getLinks method which takes in a file path should be called to obtain the correct output, then return that output in the arrayList.
