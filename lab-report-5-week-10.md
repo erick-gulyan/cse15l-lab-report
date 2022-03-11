@@ -29,7 +29,7 @@ Expected Output: `[]`
 ---
 
 I believe that my output is incorrect since the file doesn't follow the proper format for it to be considered a link, the format being:
-`[Link](a.com)`
+`[Link](a.com)`. The problem with my code is the inability to understand the `:` character, and thus adding the jpg file to the ArrayList.
 Instead, the file uses a `:` after the last closed bracket, thus this isnt a file. If we wanted to fix this, we could add an if statement which checks to see if index of `lastColon` is 1 after `lastClosedParen`. If so, break. If not, then continue. 
 
 ## Test 2
@@ -47,6 +47,7 @@ Prof's Output: `[<url>]`
 ---
 Expected Output: `[<url>]`
 ---
+The problem with my code is the inability to correctly understand a link when incorporating file paths. 
 
 I believe that my output is incorrect for this case since the file follows proper order to product a link, that being `[Link](anything)`.
 This given test link is special since it incorporates the use of paths and adds a "title" text inside of the link after the path argument followed preceeded by spaces. This issue could be fixed by adding an if statement which checks to see if the character after the `LastOpenParen` is `/`, if so, then the getLinks method which takes in a file path should be called to obtain the correct output, then return that output in the arrayList.
