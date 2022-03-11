@@ -40,10 +40,12 @@ The results of the diff command shown below:
 
 My Output: `[]`
 Prof's Output: `[<url>]`
-Expected Output: `[]`
+Expected Output: `[<url>]`
 
-I believe that the professor's output is incorrect for this case since the file doesn't follow proper order to product a link, that being `[Link](anything)`.
-This given test link is special since it incorporates the use of paths and adds a "title" text inside of the link after the path argument followed preceeded by spaces.
+I believe that my output is incorrect for this case since the file follows proper order to product a link, that being `[Link](anything)`.
+This given test link is special since it incorporates the use of paths and adds a "title" text inside of the link after the path argument followed preceeded by spaces. This issue could be fixed by adding an if statement which checks to see if the character after the `LastOpenParen` is `/`, if so, then the getLinks method which takes in a file path should be called to obtain the correct output, then return that output in the arrayList.
+
+
   
 
 
